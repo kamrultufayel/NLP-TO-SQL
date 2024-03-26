@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Results</title>
+</head>
+<body>
+
+<form action="/" method="post">
+    <label for="user_message">Enter your message:</label><br>
+    <input type="text" id="user_message" name="user_message"><br><br>
+    <button type="submit">Submit</button>
+</form>
+
+{% if user_input %}
+    <h2>Your Input:</h2>
+    <p>{{ user_input }}</p>
+{% endif %}
+
+{% if html_table %}
+    <h2>SQL Results:</h2>
+    {{ html_table | safe }}
+{% elif error_message %}
+    <h2>Error:</h2>
+    <p>{{ error_message }}</p>
+{% else %}
+    <h2>No data available</h2>
+{% endif %}
+
+</body>
+</html>
