@@ -5,7 +5,7 @@ import sqlite3
 import pandas as pd
 import sql_db
 from prompts.prompts import SYSTEM_MESSAGE
-from hi import get_completion_from_messages
+from chatgptapi import get_completion_from_messages
 import json
 
 def query_database(query, conn):
