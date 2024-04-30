@@ -1,0 +1,24 @@
+python -m venv .venv
+source .venv/bin/activate  # On Windows, use: .venv\Scripts\activate
+
+
+python -m venv .venv
+source .venv/bin/activate  # On Windows, use: .venv\Scripts\activate
+
+Run the Streamlit App:
+
+streamlit run main_app.py
+
+Open the displayed URL in your browser, usually http://localhost:8501.
+
+Type in your natural language query into the input box, like "Show me all expenses greater than 1000".
+
+You can Type more question
+
+1.Write a SQL query to display all projects from the projects table.
+2.Generate a monthly financial summary (total revenue, expenses, and profit) for each project ( Error)
+3.Rank projects based on their profitability (total profit) from highest to lowest
+4.Create a SQL query to calculate the total expenses and total profit recorded in the finances table.
+5.Write a query to provide a summary of total monthly revenue and expenses
+
+View the generated SQL query and the results from the database.

@@ -11,6 +11,7 @@ import json
 def query_database(query, conn):
     """ Run SQL query and return results in a dataframe """
     return pd.read_sql_query(query, conn)
+
 # Create or connect to SQLite database
 conn = sql_db.create_connection()
 
